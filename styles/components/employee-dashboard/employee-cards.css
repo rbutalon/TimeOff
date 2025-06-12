@@ -1,0 +1,38 @@
+.dashboard__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card__1, .card__2, .card__3 {
+    height: 170px;
+}
+
+.card__4 {
+    height: 450px;
+}
+
+.chart__wrapper {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#leaveBalanceChart {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+@media (min-width: 640px) {
+    .dashboard__cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card__4 {
+        grid-column: span 3;
+        height: max-content;
+    }
+}

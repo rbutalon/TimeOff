@@ -1,0 +1,135 @@
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
+
+.container, .formContainer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.regisContainer{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    margin-top: var(--size-6xl);
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    font-size: var(--size-md);
+    text-decoration: none;
+    background-color: var(--clr-teal);
+    color: var(--clr-dark);
+    padding: 0.3em 1em;
+    border-radius: 9px;
+    border: 2px solid var(--clr-emerald);
+    transform: scale(1);
+    will-change: transform;
+    transition: transform 0.5s ease, color 0.3s, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 
+                0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    color: var(--clr-cream);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25), 
+                0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+    translate: 0 0.225em;
+}
+
+.active {
+    color: var(--clr-active);
+}
+
+strong {
+    color: var(--clr-emerald);
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .background-image { 
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain; 
+        z-index: -1;
+        pointer-events: none; 
+    }
+
+    .container, .formContainer {
+        max-width: 475px;
+    }
+
+}
+
+/* sm */
+@media (min-width: 640px) {
+    .container, .regisContainer, .formContainer {
+        max-width: 640px;
+    }
+
+}
+
+/* md */
+@media (min-width: 768px) {
+    .container, .regisContainer, .formContainer {
+        max-width: 768px;
+    }
+
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .container, .regisContainer {
+        max-width: 1024px;
+    }
+
+    .section {
+        margin-top: 7rem;
+    }
+
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .container, .regisContainer {
+        max-width: 1280px;
+    }
+
+    .section {
+        margin-top: var(--size-3xl);
+    }
+
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+    .container, .regisContainer {
+        max-width: 1536px;
+    }
+} */
+

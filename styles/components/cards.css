@@ -1,0 +1,36 @@
+.dashboard__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--size-3xl);
+  }
+  
+  .card {
+    text-align: center;
+    box-sizing: border-box;
+    background-color: var(--clr-cream); 
+    padding: var(--size-xs);
+    border-radius: 10px;
+    border: 2px solid var(--clr-emerald);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card__title {
+    padding: 0.2em 0;
+    color: var(--clr-emerald);
+    margin-bottom: 10px;
+    font-size: var(--size-lg);
+  }
+
+  .card__number h3 {
+    text-align: center;
+    color: var(--clr-emerald); 
+    font-size: var(--size-4xl);
+    margin: var(--size-xl) 0 0 0;
+  }

@@ -1,0 +1,32 @@
+.dashboard__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card__1, .card__2, .card__3 {
+    height: 170px;
+}
+
+
+/* sm */
+@media (min-width: 640px) {
+    .dashboard__cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card__4, .card__5 {
+        grid-column: span 3;
+    }
+
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .card__4 {
+        grid-column: span 1;
+    }
+
+    .card__5 {
+        grid-column: span 2;
+    }
+}

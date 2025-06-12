@@ -1,0 +1,200 @@
+.greeting__wrapper{
+    margin-top: var(--size-3xl);
+}
+
+.greeting {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-cream);
+    border: 2px solid var(--clr-emerald);
+    border-radius: 12px;
+    padding: 0.3em 0.5em;
+}
+
+.greeting__title {
+    h1 {
+        font-family: 'Khand', sans-serif;
+        font-size: var(--size-2xl);
+        color: var(--clr-emerald);
+        font-weight: 800;
+    }
+}
+
+.form__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    position: relative;
+    line-height: 80px;
+    width: 100%;
+    background-color: var(--clr-teal);
+    border: 2px solid var(--clr-dark);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--size-xs);
+    margin-top: var(--size-3xl);
+    padding: var(--size-xl) 0;
+}
+
+.input__group {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 0.2em;
+}
+
+.input__group span {
+    font-family: 'Khand', sans-serif;
+    font-size: var(--size-xs);
+    color: var(--clr-cream);
+}
+
+.input__group select  {
+    font-family: 'Khand', sans-serif;
+    font-size: var(--size-sm);
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 0.4em;
+    color: var(--clr-cream);
+    background-color: var(--clr-emerald);
+    border: 2px solid var(--clr-emerald);
+    outline: none;
+    transition: all 0.4s ease;
+}
+
+select:focus {
+    color: var(--clr-cream);
+    background-color: var(--clr-emerald);
+    border-color: var(--clr-cream);
+}
+
+.form__input-date {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: var(--size-xs);
+    font-size: var(--size-xs);
+    font-weight: 800;
+    border: 2px solid var(--clr-cream);
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--clr-emerald);
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .form__input-date::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+option:disabled {
+    background-color: var(--clr-emerald);
+    color: var(--clr-cream);
+}
+
+label {
+    color: var(--clr-cream);
+    font-size: var(--size-sm);
+    font-weight: 600;
+}
+
+input{
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--size-xs);
+    height: 35px;
+    background: transparent;
+    color: var(--clr-cream);
+    border: 2px solid var(--clr-emerald);
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+input::placeholder {
+    font-family: 'Khand', sans-serif;
+    color: var(--clr-seaGreen);
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--clr-cream);
+}
+
+textarea {
+    font-family: 'Khand', sans-serif;
+    font-size: var(--size-sm);
+    font-weight: 600;
+    color: var(--clr-light);
+    padding: var(--size-xs);
+    letter-spacing: 0.1em;
+    background-color: var(--clr-emerald);
+    outline: none;
+    border: 2px solid var(--clr-cream);
+    border-radius: 10px;
+}
+
+textarea::placeholder {
+    color: var(--clr-seaGreen);
+}
+
+.submit__wrapper {
+  cursor: pointer;
+  border: 2px solid var(--clr-dark);
+  border-radius: 8px;
+  background-color: var(--clr-emerald);
+  padding-bottom: 10px;
+  transition: 0.1s ease-in-out;
+  user-select: none;
+}
+
+.submitBtn {
+  color: var(--clr-emerald);
+  background-color: var(--clr-cream);
+  border: 4px solid var(--clr-cream);
+  border-radius: 8px;
+  padding: 0.3em 0.5em;
+  font-size: var(--size-xs);
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.submit__wrapper:active {
+  padding: 0;
+  margin-bottom: 8px;
+  transform: translateY(8px);
+}
+
+.error {
+    font-size: 0.8em;
+    color: #ff4545;
+}
+
+input.valid {
+    border-color: #00ff99;
+}
+
+input.invalid {
+    animation: shake 0.4s ease;
+    border-color: #ff4545;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+
